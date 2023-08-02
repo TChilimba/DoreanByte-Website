@@ -4,8 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoreanByte - About</title>
+    <title>DoreanByte - Web Design</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .about-details > p {
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .offerings {
+            margin-top: 2.5em;
+        }
+
+        .offerings div {
+            margin-bottom: 2.2em;
+        }
+
+        .offerings h3 {
+            text-align: center;
+        }
+
+        .offerings p {
+            text-align: left;
+        }
+
+        .offerings h3 {
+            color: purple;
+        }
+
+        .offerings ul {
+            list-style: disc;
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,24 +53,52 @@
             <li><a href="consultation.html">Consultation</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
+        <ul class="toggle-overlay">
+            <button class="close-button">&#10006;</button>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="web_design.html">Web Design</a></li>
+            <li><a href="app_development.html">App Development</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="toggle-nav">&#9776;</button>
     </nav>
     <main class="container">
         <div class="about-details">
             <h2 class="brand-lg">Web Design and Development</h2>
             <p>
-                We provide web design and development, taking you as our client through the whole process of setting up
-                your company's website. Striving for customer satisfaction we work close with you as our client building
-                your vision of your internet brand. Our expertise lies in being able to utilise a variety of technologies for the web from server side languages like
-                Node, PHP, Python, C# and many others. We are able to leverage available frameworks to build robust systems that
-                cater to your needs. From simple CRUD (Create, Read, Update, Delete) based platforms to platforms that require more
-                complex logic and workflows. All in a timely manner and to spec.
+                We provide web design and development, building quality experiences that meet your needs. Our flexibility lets us utilise
+                multiple technologies in the following domains:
             </p>
-            <p>
-                On the frontend we are able to leverage various frontend frameworks like React, Svelte, Vue and many more to bring fluid
-                and dynamic interactivity to your apps. Creating simple HTML websites is no issue either as we try to cater to as many of
-                our clients demands on the outcome of their vision in as many ways as possible. All this is done while maintaining close interaction
-                with you our client, ensuring that what we are doing is what you need accomplished.
-            </p>
+        </div>
+        <div class="offerings">
+            <div>
+                <h3>Front-end Web Development</h3>
+                <p>
+                    At DoreanByte we are able to pick from a variety of tools that match your specifications. This gives us the ability to approach your
+                    unique set of challenges in many ways. On the Front-end side of web development, we are knowledgeable in and able to use such technologies as:
+                </p>
+                <ul>
+                    <li>HTML, JavaScript and CSS</li>
+                    <li>React, Svelte and Vue for Single Page Applications</li>
+                    <li>Popular CSS Frameworks like BootStrap, Bulma, Tailwind etc.</li>
+                </ul>
+                <p>And much more.</p>
+            </div>
+            <div>
+                <h3>Server-side Web Development</h3>
+                <p>
+                    We also have a strong background in Server-side, technologies. We can build scalable systems that run on your servers. From processing simple
+                    requests to handling multiple concurrent users to your service. These technologies and frameworks include:
+                </p>
+                <ul>
+                    <li>Python's Django Framework</li>
+                    <li>PHP using Laravel, Symphony etc.</li>
+                    <li>Leverage the .NET framework with C# to Create Backend Services</li>
+                    <li>Provide Database Administration and Management</li>
+                </ul>
+                <p>And much more.</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -59,7 +120,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li class="active"><a href="web_design.html">Web Design</a></li>
                             <li><a href="app_development.html">App Development</a></li>
-                            <li><a href="">Consultation</a></li>
+                            <li><a href="consultation.html">Consultation</a></li>
                             <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
@@ -70,15 +131,13 @@
         <div>
             <div>
                 <div class="copyright">
-                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights
+                    &copy; Copyright <span id="year"></span> <strong><span>DoreanByte</span></strong>. All Rights
                     Reserved
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+<script src="js/main.js"></script>
 
 </html>

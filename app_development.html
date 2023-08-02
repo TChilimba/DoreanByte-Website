@@ -4,8 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoreanByte - About</title>
+    <title>DoreanByte - App Development</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .about-details > p {
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .offerings {
+            margin-top: 2.5em;
+        }
+
+        .offerings div {
+            margin-bottom: 2.2em;
+        }
+
+        .offerings h3, p {
+            text-align: left;
+        }
+
+        .offerings h3 {
+            color: purple;
+        }
+
+        .offerings ul {
+            list-style: disc;
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,19 +49,24 @@
             <li><a href="consultation.html">Consultation</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
+        <ul class="toggle-overlay">
+            <button class="close-button">&#10006;</button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web_design.html">Web Design</a></li>
+            <li class="active"><a href="app_development.html">App Development</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="toggle-nav">&#9776;</button>
     </nav>
     <main class="container">
         <div class="about-details">
-            <h2 class="brand-lg">App Development, Cross Platform and Native</h2>
+            <h2 class="brand-lg">App Development</h2>
             <p>
-                Depending on your goals and needs we are able to leverage a variety of technologies
-                that can bring native experiences for your users for example building Android applications
-                with Kotlin/Java for the true native Android experience. But we are also able to leverage frameworks
-                like Flutter with the Dart programming language or React Native if you as our client are seeking a
-                multiplatform solution. On desktop we are also able to leverage the .NET framework to create native applications
-                for Windows.
+                DoreanByte also has app development services, where we can build an app on your platform of choice. We are knowledgeable
+                in the following technological domains:
             </p>
-            <p>
+            <!-- <p>
                 Our varied expertise makes it such that given your needs over the type of application you seek we can
                 leverage the most optimal technology stack and utilise it to achieve your desired goals. We do our best to work with
                 technology stacks we understand and are familiar with but are also open to expanding our skills by utilising recently
@@ -41,7 +75,33 @@
             <p>
                 We have had the pleasurable experience of developing our own Android application <a href="">Katswiri</a> using Flutter and are comfortable utilising
                 it in future endeavours based on what you our client needs.
-            </p>
+            </p> -->
+        </div>
+        <div class="offerings">
+            <div>
+                <h3>Native Applications</h3>
+                <p>
+                    We are able to create applications that are native to your platform of choice by using the tools that have first party support
+                    from the operating system developers. These technologies include:
+                </p>
+                <ul>
+                    <li>Kotlin/Java for native Android Applications</li>
+                    <li>.NET with C# for native Windows Applications</li>
+                </ul>
+                <p>And much more.</p>
+            </div>
+            <div>
+                <h3>Cross Platform Applications</h3>
+                <p>
+                    We also offer flexibility by being able to create applications that can target and run on multiple platforms from a single codebase.
+                    Saving on development cost and time to market. Some of these technologies include:
+                </p>
+                <ul>
+                    <li>React Native</li>
+                    <li>Flutter</li>
+                </ul>
+                <p>And much more.</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -74,15 +134,13 @@
         <div>
             <div>
                 <div class="copyright">
-                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights
+                    &copy; Copyright <span id="year"></span> <strong><span>DoreanByte</span></strong>. All Rights
                     Reserved
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+<script src="js/main.js"></script>
 
 </html>

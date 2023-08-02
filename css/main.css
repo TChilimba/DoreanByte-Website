@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 footer {
@@ -9,7 +11,7 @@ footer {
 
 .container {
     max-width: 800px;
-    padding: 8px;
+    padding: 20px;
     margin: 2.5em auto;
 }
 
@@ -71,9 +73,8 @@ ul {
 
 .brand-lg {
     color: purple;
-    font-size: 56px;
+    font-size: 52px;
     text-align: center;
-    padding: 16px;
 }
 
 .offers {
@@ -241,4 +242,99 @@ ul {
 
 .envelope {
     color: purple;
+}
+
+.toggle-nav, .close-button {
+    display: none;
+    padding: 16px;
+    background-color: #fff;
+    color: purple;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-overlay {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-overlay.toggled {
+        display: block;
+        z-index: 50;
+        background: #fff;
+        color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .toggle-overlay li {
+        text-align: center;
+        margin-bottom: .2em;
+    }
+
+    .toggle-overlay a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .toggle-overlay .active a {
+        text-decoration: none;
+        color: purple;
+    }
+
+    .brand-lg {
+        font-size: 42px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .toggle-nav, .close-button {
+        display: inline-block;
+    }
+
+    .services {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service {
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 1.2em;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project .project {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .project .project-btn {
+        display: inline-block;
+        margin-top: 8em;
+        width: 85%;
+    }
+
+    .project-btn {
+        width: 65%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-content, .footer-links {
+        align-items: flex-start;
+    }
 }

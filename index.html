@@ -15,9 +15,18 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="web_design.html">Web Design</a></li>
             <li><a href="app_development.html">App Development</a></li>
-            <li><a href="">Consultation</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
+        <ul class="toggle-overlay">
+            <button class="close-button">&#10006;</button>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="web_design.html">Web Design</a></li>
+            <li><a href="app_development.html">App Development</a></li>
+            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="toggle-nav">&#9776;</button>
     </nav>
     <main class="container">
         <header>
@@ -25,8 +34,8 @@
         </header>
         <div>
             <p class="offers">What We Offer</p>
-            <article class="services">
-                <div class="service-info service">
+            <article class="services ">
+                <div class="service-info service ">
                     <article>
                         <p>
                             <a href="web_design.html">
@@ -35,7 +44,7 @@
                         </p>
                     </article>
                 </div>
-                <div class="service-info service">
+                <div class="service-info service ">
                     <article>
                         <p>
                             <a href="app_development.html">
@@ -44,7 +53,7 @@
                         </p>
                     </article>
                 </div>
-                <div class="service-info service">
+                <div class="service-info service ">
                     <article>
                         <p>
                             <a href="consultation.html">
@@ -63,7 +72,7 @@
                         please give them a visit and consider supportiing their cause
                     </p>
                     <a href="https://wayministries.org/" target="_blank">
-                        <button class="project-btn">View</button>
+                        <button class="project-btn">Visit</button>
                     </a>
                 </article>
                 <article class="project">
@@ -73,7 +82,7 @@
                         popular websites and provides an easy to use interface to assess and
                         access multiple job listings
                     </p>
-                    <button class="project-btn">View</button>
+                    <button class="project-btn">Visit</button>
                 </article>
             </div>
             <a href="about.html">
@@ -100,7 +109,7 @@
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="web_design.html">Web Design</a></li>
                             <li><a href="app_development.html">App Development</a></li>
-                            <li><a href="">Consultation</a></li>
+                            <li><a href="consultation.html">Consultation</a></li>
                             <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
@@ -111,13 +120,11 @@
         <div>
             <div>
                 <div class="copyright">
-                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights Reserved
+                    &copy; Copyright <span id="year"></span> <strong><span>DoreanByte</span></strong>. All Rights Reserved
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+<script src="js/main.js"></script>
 </html>

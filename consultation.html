@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoreanByte - About</title>
+    <title>DoreanByte - Consultation</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
         .about-details ul {
             list-style: circle;
+        }
+
+        .details h3 {
+            color: purple;
+        }
+
+        .details > ul {
+            list-style: disc;
+            color: purple;
+        }
+
+        .details li {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -22,9 +35,18 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="web_design.html">Web Design</a></li>
             <li><a href="app_development.html">App Development</a></li>
-            <li class="active"><a href="">Consultation</a></li>
+            <li class="active"><a href="consultation.html">Consultation</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
+        <ul class="toggle-overlay">
+            <button class="close-button">&#10006;</button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web_design.html">Web Design</a></li>
+            <li><a href="app_development.html">App Development</a></li>
+            <li class="active"><a href="consultation.html">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="toggle-nav">&#9776;</button>
     </nav>
     <main class="container">
         <div class="about-details">
@@ -34,13 +56,15 @@
                 not easy either. We offer consulting services where we are able to analyse what your business needs are and
                 find an optimal solution for you. This includes:
             </p>
+        </div>
+        <div class="details">
+            <h3>Services</h3>
             <ul class="consulting-info">
                 <li>Project Cost Analysis</li>
                 <li>Project Time Analysis</li>
                 <li>Server Procurement</li>
                 <li>Long-term System Maintanence</li>
             </ul>
-            <p>And much more.</p>
         </div>
     </main>
     <footer>
@@ -62,7 +86,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="web_design.html">Web Design</a></li>
                             <li><a href="app_development.html">App Development</a></li>
-                            <li class="active"><a href="">Consultation</a></li>
+                            <li class="active"><a href="consultation.html">Consultation</a></li>
                             <li><a href="about.html">About</a></li>
                         </ul>
                     </div>
@@ -73,15 +97,13 @@
         <div>
             <div>
                 <div class="copyright">
-                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights
+                    &copy; Copyright <span id="year"></span> <strong><span>DoreanByte</span></strong>. All Rights
                     Reserved
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+<script src="js/main.js"></script>
 
 </html>
