@@ -1,54 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dorean Byte - Empowering Solutions</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoreanByte - Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <h1>Dorean Byte</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    
-    <section>
-        <h2>About Dorean Byte</h2>
-        <p>Dorean Byte is a Malawian startup utilizing Information Technology to create solutions and platforms that empower individuals and enhance their way of life.</p>
-    </section>
-    
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>Wayministries Website</li>
-            <li>Katswiri Android Job Listing App</li>
+    <nav class="site-nav">
+        <a href="index.html">
+            <h2 class="brand">DoreanByte</h2>
+        </a>
+        <ul class="links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="web_design.html">Web Design</a></li>
+            <li><a href="app_development.html">App Development</a></li>
+            <li><a href="">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-    </section>
-    
-    <section>
-        <h2>Katswiri - Job Listing App</h2>
-        <p>Katswiri is an Android application developed by Dorean Byte. It helps users find job listings in Malawi and other countries, providing opportunities for employment and empowerment.</p>
-        <img src="katswiri_app_screenshot.png" alt="Katswiri App Screenshot">
-    </section>
-    
-    <section>
-        <h2>Contact Dorean Byte</h2>
-        <p>If you have any inquiries or ideas you'd like to bring to life, we would love to hear from you. Get in touch with us:</p>
-        <ul>
-            <li>Email: info@doreanbyte.com</li>
-            <li>Phone: +123456789</li>
-        </ul>
-    </section>
-    
+    </nav>
+    <main class="container">
+        <header>
+            <h1 class="brand-lg">DoreanByte</h1>
+        </header>
+        <div>
+            <p class="offers">What We Offer</p>
+            <article class="services">
+                <div class="service-info service">
+                    <article>
+                        <p>
+                            <a href="web_design.html">
+                                Web Design and Development
+                            </a>
+                        </p>
+                    </article>
+                </div>
+                <div class="service-info service">
+                    <article>
+                        <p>
+                            <a href="app_development.html">
+                                App Development Cross Platform and Native
+                            </a>
+                        </p>
+                    </article>
+                </div>
+                <div class="service-info service">
+                    <article>
+                        <p>
+                            <a href="consultation.html">
+                                Consultation to Help You Find the Best Solution
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </article>
+            <h3 class="project-title">Our Projects</h3>
+            <article class="projects">
+                <article class="project">
+                    <h2>WayMinistries</h2>
+                    <p>
+                        It was an honor to develop the website for WayMinistries,
+                        please give them a visit and consider supportiing their cause
+                    </p>
+                    <a href="https://wayministries.org/" target="_blank">
+                        <button class="project-btn">View</button>
+                    </a>
+                </article>
+                <article class="project">
+                    <h2>Katswiri</h2>
+                    <p>
+                        Katswiri is our app that helps aggregate jobs from across multiple
+                        popular websites and provides an easy to use interface to assess and
+                        access multiple job listings
+                    </p>
+                    <button class="project-btn">View</button>
+                </article>
+            </div>
+            <a href="about.html">
+                <div class="about-btn">
+                    <button>Find Out About Us</button>
+                </div>
+            </a>
+    </main>
     <footer>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Copyright © 2023 Dorean Byte</a></li>
-        </ul>
+        <div>
+            <div>
+                <div class="footer-content">
+                    <div>
+                        <h3 class="brand">DoreanByte</h3>
+                        <p>
+                            <strong>Email Us: </strong><a href="mailto:dev.doreanbyte.mw@gmail.com" class="envelope"><i class="bx bx-envelope"></i>dev.doreanbyte.mw@gmail.com</a><br>
+                            <strong>Contact Us: </strong>+265887273272
+                        </p>
+                    </div>
+
+                    <div class="footer-content">
+                        <h4>Site Links</h4>
+                        <ul class="footer-links">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="web_design.html">Web Design</a></li>
+                            <li><a href="app_development.html">App Development</a></li>
+                            <li><a href="">Consultation</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div class="copyright">
+                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>
-

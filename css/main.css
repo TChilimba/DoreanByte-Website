@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 6em;
+}
+
+.container {
+    max-width: 800px;
+    padding: 8px;
+    margin: 2.5em auto;
+}
+
+.site-nav {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .9);
+    z-index: 50;
+}
+
+.site-nav a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links a {
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 28px;
+    color: black;
+    transition: .5s;
+}
+
+.active a {
+    color: purple;
+}
+
+.links a:hover {
+    color: purple;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.brand, .brand-lg {
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.brand {
+    font-size: 18px;
+    color: purple;
+}
+
+.brand-lg {
+    color: purple;
+    font-size: 56px;
+    text-align: center;
+    padding: 16px;
+}
+
+.offers {
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.service {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, .6);
+    font-weight: 600;
+    margin: 28px;
+    text-align: center;
+    width: 33.333%;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project {
+    text-align: center;
+    width: 49.9%;
+    margin-right: 20px;
+}
+
+.project p {
+    font-weight: lighter;
+    height: 80px;
+}
+
+.footer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project h2 {
+    color: purple;
+}
+
+.project-btn {
+    width: 33.3%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 8px;
+    transition: .8s;
+    font-weight: bold;
+}
+
+.project-btn:hover {
+    background: purple;
+    color: white;
+    border: 1px solid purple;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.service-info {
+    transition: .8s;
+}
+
+.service-info:hover {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.service:hover {
+    border: 1px solid purple;
+}
+
+.service-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.service-info a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+.about-details {
+    text-align: center;
+}
+
+.about-details h3 {
+    color: purple;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin-right: 1.2em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content h4 {
+    text-align: center;
+}
+
+.about-btn {
+    text-align: center;
+    margin: 4em auto;
+    width: 200px;
+}
+
+.about-btn button {
+    padding: 1.2em;
+    background: transparent;
+    color: black;
+    border: 1px solid purple;
+    border-radius: 8px;
+    font-weight: bold;
+    color: purple;
+    transition: .8s;
+}
+
+.about-btn button:hover {
+    padding: 1.2em;
+    background: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    color: purple;
+}
+
+.envelope {
+    color: purple;
+}

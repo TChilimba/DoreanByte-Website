@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoreanByte - About</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .about-details ul {
+            list-style: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="site-nav">
+        <a href="index.html">
+            <h2 class="brand">DoreanByte</h2>
+        </a>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web_design.html">Web Design</a></li>
+            <li><a href="app_development.html">App Development</a></li>
+            <li class="active"><a href="">Consultation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="about-details">
+            <h2 class="brand-lg">Consultation</h2>
+            <p>
+                Picking a solution is not easy and finding the best fit for your budgetary needs and time constraints is
+                not easy either. We offer consulting services where we are able to analyse what your business needs are and
+                find an optimal solution for you. This includes:
+            </p>
+            <ul class="consulting-info">
+                <li>Project Cost Analysis</li>
+                <li>Project Time Analysis</li>
+                <li>Server Procurement</li>
+                <li>Long-term System Maintanence</li>
+            </ul>
+            <p>And much more.</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <div class="footer-content">
+                    <div>
+                        <h3 class="brand">DoreanByte</h3>
+                        <p>
+                            <strong>Email Us: </strong><a href="mailto:dev.doreanbyte.mw@gmail.com" class="envelope"><i
+                                    class="bx bx-envelope"></i>dev.doreanbyte.mw@gmail.com</a><br>
+                            <strong>Contact Us: </strong>+265887273272
+                        </p>
+                    </div>
+
+                    <div class="footer-content">
+                        <h4>Site Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="web_design.html">Web Design</a></li>
+                            <li><a href="app_development.html">App Development</a></li>
+                            <li class="active"><a href="">Consultation</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div class="copyright">
+                    &copy; Copyright <span id="year"></span> <strong><span>Dorean Byte</span></strong>. All Rights
+                    Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>
