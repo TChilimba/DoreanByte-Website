@@ -47,13 +47,17 @@ footer {
     transition: .5s;
 }
 
-.active a {
+.active a, .footer-content span {
     color: purple;
 }
 
 .links a:hover {
     color: purple;
     font-size: 16px;
+}
+
+.footer-content h4 {
+    margin: 0;
 }
 
 ul {
@@ -273,7 +277,8 @@ ul {
 
     .toggle-overlay li {
         text-align: center;
-        margin-bottom: .2em;
+        margin-bottom: 2em;
+        font-size: 16px;
     }
 
     .toggle-overlay a {
@@ -281,9 +286,14 @@ ul {
         color: black;
     }
 
+    .toggle-overlay a:hover {
+        color: purple;
+    }
+
     .toggle-overlay .active a {
         text-decoration: none;
         color: purple;
+        font-weight: bold;
     }
 
     .brand-lg {
