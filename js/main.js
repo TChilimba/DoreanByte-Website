@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleOverlay = document.querySelector(".toggle-overlay");
   const closeButton = document.querySelector(".close-button");
 
-  toggleButton.addEventListener("click", function () {
+  toggleButton?.addEventListener("click", function () {
     toggleOverlay.classList.toggle("toggled");
   });
 
-  closeButton.addEventListener("click", function () {
+  closeButton?.addEventListener("click", function () {
     toggleOverlay.classList.toggle("toggled");
   });
 });
