@@ -713,6 +713,7 @@ footer span {
     .toggle-nav,
     .close-button {
         display: inline-block;
+        font-size: 24px;
     }
 
     /* End Toggle Styling For Small Screen */
