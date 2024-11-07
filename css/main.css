@@ -281,6 +281,12 @@ nav a:hover, footer a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service-card ul {
+    list-style: none;
+    color: var(--btn-hover-color);
+    font-size: 1.3em;
+}
+
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px var(--card-hover-color);
