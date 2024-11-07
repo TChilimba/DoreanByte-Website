@@ -232,12 +232,12 @@ nav a:hover, footer a:hover {
 .icon {
     font-size: 32px;
     margin-bottom: 10px;
-    color: #444;
+    color: var(--brand-color);
 }
 
 .more-header {
     font-size: 1.8rem;
-    color: var(--dark-text-color);
+    color: var(--brand-color);
     padding-bottom: 5px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -248,7 +248,7 @@ nav a:hover, footer a:hover {
 
 .more-title {
     font-size: 1.49rem;
-    color: var(--brand-color);
+    color: var(--dark-text-color);
     margin: 10px 0;
 }
 
@@ -422,6 +422,7 @@ h2 {
 }
 
 .cta-button {
+    text-decoration: none;
     background-color: var(--brand-color);
     color: var(--light-text-color);
     border: none;
