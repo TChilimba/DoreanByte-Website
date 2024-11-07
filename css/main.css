@@ -1,5 +1,5 @@
 /*
-// General Reset
+/ General Reset
 */
 * {
     margin: 0;
@@ -83,9 +83,15 @@ nav a:hover, footer a:hover {
     background-position: 50% 50%;
     background-size: cover;
     text-align: center;
-    transition: all .6s ease;
+    transition: all .5s ease-out;
     padding: 100px 20px;
-    height: 420px;
+    min-height: 280px;
+    max-height: 420px;
+    margin-top: 78px;
+}
+
+.banner:hover {
+    transform: scale(1.1);
 }
 
 .banner h1 {
@@ -100,7 +106,7 @@ nav a:hover, footer a:hover {
 .banner p {
     font-size: 1.1em;
     color: var(--dark-text-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 /* End Banner Styling */
 
@@ -141,6 +147,8 @@ nav a:hover, footer a:hover {
 }
 
 .more-section {
+    display: flex;
+    flex-direction: column;
     margin-top: 65px;
     padding: 35px;
 }
@@ -162,6 +170,7 @@ nav a:hover, footer a:hover {
 
 .pricing-section {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     padding: 0 50px;
     margin: 25px auto;
@@ -177,7 +186,6 @@ nav a:hover, footer a:hover {
 }
 
 .about-section {
-    width: 100%;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
@@ -224,12 +232,12 @@ nav a:hover, footer a:hover {
 .icon {
     font-size: 32px;
     margin-bottom: 10px;
-    color: #444;
+    color: var(--brand-color);
 }
 
 .more-header {
     font-size: 1.8rem;
-    color: var(--dark-text-color);
+    color: var(--brand-color);
     padding-bottom: 5px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -240,7 +248,7 @@ nav a:hover, footer a:hover {
 
 .more-title {
     font-size: 1.49rem;
-    color: var(--brand-color);
+    color: var(--dark-text-color);
     margin: 10px 0;
 }
 
@@ -252,12 +260,16 @@ nav a:hover, footer a:hover {
     height: 100%;
 }
 
-.more-icon svg {
+.more-icon svg, .contact-icon svg, .service-icon svg {
     color: var(--brand-color);
     display: block;
     margin: 0 auto;
     padding: 28px 0;
     height: 156px;
+}
+
+.contact-icon svg, .service-icon svg {
+    height: 60px;
 }
 
 .service-card {
@@ -410,6 +422,7 @@ h2 {
 }
 
 .cta-button {
+    text-decoration: none;
     background-color: var(--brand-color);
     color: var(--light-text-color);
     border: none;
@@ -548,13 +561,14 @@ h2 {
 
 /* Column Styling */
 .more-column {
-    margin: 100px auto;
+    margin: 25px auto;
     display: flex;
     gap: 20px;
     height: 285px;
     flex-direction: row;
     justify-content: space-between;
     padding: 18px;
+    flex: 1;
 }
 
 .more-column .more-icon {
@@ -644,6 +658,16 @@ footer span {
 /* End Styling */
 
 @media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Fill Flex Box */
+    .intro-section, .more-section, .more-column, .pricing-card, .portfolio-card-wide {
+        flex: 1;
+    }
+
     /* Toggle Styling For Small Screen */
     .toggle-overlay.toggled {
         display: block;
@@ -678,6 +702,10 @@ footer span {
         font-weight: bold;
     }
 
+    .site-nav {
+        padding: 8px;
+    }
+
     .site-nav .links {
         display: none;
     }
@@ -688,4 +716,103 @@ footer span {
     }
 
     /* End Toggle Styling For Small Screen */
+
+    /* Disable Banner Transform */
+    .banner:hover {
+        transform: none;
+    }
+
+    .banner {
+        padding: 16px;
+    }
+
+    .banner h1 {
+        font-size: 1.9em;
+    }
+
+    .banner h2 {
+        font-size: 1.4em;
+    }
+
+    /* Section Styling */
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 22px 10px;
+    }
+
+    .services-section, .contact-section, .about-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-section, .portfolio-section, .mobile-section, .portfolio-card-wide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .more-section {
+        margin-top: 0;
+    }
+
+    /* End Section Styling */
+
+    /* Card Styling */
+    .portfolio-card-narrow {
+        margin: 32px auto;
+    }
+
+    .portfolio-card-content p {
+        text-align: justify;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .intro-card {
+        min-width: 100%;
+        min-height: 285px;
+    }
+
+    .intro-card:hover {
+        transform: none;
+    }
+    /* End Card Styling */
+
+    /* Column Styling */
+    .more-column {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .more-title {
+        text-align: center;
+    }
+
+    .more-text {
+        text-align: justify;
+        width: 380px;
+        margin: 0 auto;
+    }
+    /* End Column Styling */
+
+    /* Footer Styling */
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links li {
+        text-align: center;
+    }
+
+    /* End Footer Styling */
+
+    /* Util Styling */
+    .reverse {
+        flex-direction: column;
+    }
+    /* ENd Util Styling */
 }
